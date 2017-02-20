@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <script type="text/javascript">
+            function showArrowKey(e) {
+                arrowKey = e.which||e.keyCode;
+                switch(arrowKey) {
+                    case 37:
+                        alert('left arrow');
+                        break;
+                    case 38:
+                        alert('up arrow');
+                        break;
+                    case 39:
+                        alert('right arrow');
+                        break;
+                    case 40:
+                        alert('down arrow');
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body onkeydown="showArrowKey(event);">
+        <p>Press an arrow key and and alert will tell which was pressed</p>
+    </body>
+</html>
