@@ -1,8 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
     "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <head>
-        <title></title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>AudioGame</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
         <script type="text/javascript">
             function showArrowKey(e) {
@@ -22,9 +24,23 @@
                         break;
                 }
             }
+
+            
         </script>
     </head>
+
+    <div class="header">
+        
+
+            <div class="nav">
+                <ul>
+                    <li><a class="active" href="control.html">Home</a></li>
+                    <li><a href="aboutaudiogame.html">About Audio Game</a></li> 
+                <ul>
+            </div>  
+    </div>
+
     <body onkeydown="showArrowKey(event);">
-        <p>Press an arrow key and and alert will tell which was pressed</p>
+       <p>Press an arrow key and and alert will tell which was pressed</p>
     </body>
 </html>
