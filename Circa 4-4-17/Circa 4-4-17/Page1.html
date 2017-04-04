@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <style> background-image: url("darkwoods.jpg"); </style>
+    <audio autoplay>
+        <source src="Page1.mp3" type="audio/mpeg">
+    </audio>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <script type="text/javascript">
+            function showArrowKey(e) {
+                arrowKey = e.which||e.keyCode;
+                switch(arrowKey) {
+                    case 37:
+                        window.location = "Page2.html";
+                        break;
+                    case 38:
+                         window.location = "Page3.html";
+                        break;
+                    case 39:
+                         window.location = "Page4.html";
+                        break;
+                    case 40:
+                        window.location = "Page5.html";
+                        break;
+                }
+            }
+        </script>
+    </head>
+    
+    <body background="darkwoods.jpg" onkeydown="showArrowKey(event);">
+        <p> <font color="#F0FFFF" size="5" font face="verdana"><b>
+It's a windy day, our three friends venture thru a forest to go cave spelunking. Our three characters, Yash, Arushi and Kuhu are out for a day adventure and Kuhu and Arushi have very little experience. Yash also has very little climbing skills, but is persistent on going spelunking as he was quite adventurous, to the extent that he even left the guide book in the car. 
+Kuhu - 'How much longer Yash?'.
+Yash - 'It's only a bit further!'.
+Arushi and Kuhu were growing quite impatient, as they neared their destination. After the three finally reach the cave entrance, they decide on who should go first. 
+</p></font></b>
+<center><p><b><font color="#F0FFFF">Use the Arrow Keys on your keyboard to navigate</font></b></p></center>
+<center><img src = "arrowkeys.png"></center>
+    </body>
+</html>

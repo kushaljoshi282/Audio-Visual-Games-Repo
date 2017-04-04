@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>AudioGame</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+        <script type="text/javascript">
+
+        </script>
+
+
+        <script type="text/javascript">
+            
+            window.onload = function()
+            {
+                setTimeout(func1, 2000);
+            };
+            function func1()
+            {
+                document.getElementById("delayedText").style="visibility:none";
+            }
+            
+        </script>
+        <script>
+            function showArrowKey(e) {
+                arrowKey = e.which||e.keyCode;
+                switch(arrowKey) {
+                    case 37:
+                        alert('left arrow');
+                        break;
+                    case 38:
+                        alert('up arrow');
+                        break;
+                    case 39:
+                        alert('right arrow');
+                        break;
+                    case 40:
+                        alert('down arrow');
+                        break;
+                }
+            }
+
+            function storyAppear() {
+                var story="It's a windy day, our three friends venture through a forest to go cave spelunking. Our three characters, Yash, Arushi and Kuhu are out for a day adventure and Kuhu and Arushi have very little experience. Yash also has very little climbing skills, but is persistent on going spelunking as he was quite adventurous, to the extent that he even left the guide book in the car. Kuhu - 'How much longer Yash?'.Yash - 'It is only a bit further!'.Arushi and Kuhu were growing quite impatient, as they neared their destination. After the three finally reach the cave entrance, they decide on who should go first.", stringcount = 0;
+                setInterval(function(){
+                    $('#TitleAppear').append(story[stringcount]);
+                    stringcount += 1;
+                },30);
+            }
+
+            storyAppear();
+            
+        </script>
+    </head>
+
+
+
+    <div class="header">
+        
+
+            <div class="nav">
+                <ul>
+                    <li><a class="active" href="control.html">Home</a></li>
+                    <li><a href="aboutaudiogame.html">About Audio Game</a></li> 
+                <ul>
+            </div>  
+    </div>
+
+    <body onkeydown="showArrowKey(event);">
+        <div id="delayedText" style="visibility:hidden">
+       <p>Press an arrow key and and alert will tell which was pressed</p>
+       </div>
+
+       <div id="text-box" style="visibility: hidden">
+            Test delayed text
+
+       </div>
+
+       <div class="caption">
+            <div>
+                <span id="TitleAppear"></span>
+            </div>
+       </div>
+
+
+    </body>
+
+</html>
