@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <style type="text/css">
+        body {
+            background-image: url("darkwoods.jpg");
+            width: 100%;
+            height: 100%;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+    <audio autoplay>
+        <source src="Page2.m4a" type="audio/mpeg">
+    </audio>
+    <head>
+        <title>AudioGame 1</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <script type="text/javascript">
+            function showArrowKey(e) {
+                arrowKey = e.which||e.keyCode;
+                switch(arrowKey) {
+                    case 37:
+                        window.location = "page2.html";
+                        break;
+                    case 39:
+                         window.location = "page3.html";
+                        break;
+                }
+            }
+        </script>
+    </head>
+
+    <header>
+        <!--<div class="nav">-->
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        <!--</div>-->
+    </header>
+    
+    <body onkeydown="showArrowKey(event);">
+       <br><br><br>
+        <center>
+        <!--<section id="content-section">-->
+            <div id="content" align="center">
+                <p> <b>
+                Resting was a good idea, time for him to recollect his thoughts <br>and take a moment to breathe after so much running. <br><br>He reached into his jean pocket, pulling out a photograph, a child and women appeared on the photograph. <br>He hears something, quickly darting around the corner to take a peak.        </b></p><br><br>
+        
+        </div>
+        </section>
+        </center>
+
+<center><p><b><font color="#F0FFFF">Use the Arrow Keys on your keyboard to navigate</font></b></p></center>
+
+<center><p></p></center>
+<center style="float: right; padding-right: 20%;"><p>Right - Keep moving
+</p></center>
+<center style="float: left; padding-left: 20%;"><p>Left - 
+Stay for a moment longer</p></center>
+<center><img src = "arrowkeys.jpg" style="width: 10%; height: 10%"></center>
+<center style="padding-bottom: .0001%;"><p></p></center>
+<center></center>
+    </body>
+</html>
