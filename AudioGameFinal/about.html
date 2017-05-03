@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <style> background-image: url("darkwoods.jpg"); </style>
+    <audio autoplay>
+    </audio>
+    <head>
+        <title>AudioGame 1</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <script type="text/javascript">
+            function showArrowKey(e) {
+                arrowKey = e.which||e.keyCode;
+                switch(arrowKey) {
+                    case 37:
+                        window.location = "Page1.html";
+                        break;
+                    case 39:
+                         window.location = "home.html";
+                        break;
+                }
+            }
+        </script>
+    </head>
+
+    <header>
+        <!--<div class="nav">-->
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        <!--</div>-->
+    </header>
+    
+    <body background="darkwoods.jpg" onkeydown="showArrowKey(event);">
+       
+        <center>
+        <!--<section id="content-section">-->
+            <div id="content" align="center">
+                <p> <b>
+        The Creators: Kushal and Yash<br><br>
+        <img src = "kushal_yash.jpg" style="width: 50%; height: 50%">
+        <br><br>
+        (Yash left, Kushal right)<br><br>
+        We are two friends who built this site from an idea to aid those who cannot see and hear. Through our class: CSCI 4830/7000 - Kane - Inclusive Design and Assistive Technology, we were able to work on the project throught the semester. We began with an idea for users that cannot see or hear, to be able to play thru a game with purely audio or visual cues, and a simple key bound interface. Our main goal was to create an interface that would allow for easy navigation of our game, which would be a generated story with mulitple outcomes based on your choices. When we began our project we were geared towards a more audio based experince, but as we progressed we realized that we could impliment visual based direction as well so that deaf people could enjoy our game as well. Thru numerous amounts of trial and error we came about with our finished product and hope you enjoy playing it just as much as we enjoyed making the game. 
+        </b></p>
+        
+        </div>
+        </section>
+        </center>
+
+<center><p><b><font color="#F0FFFF">Use the Arrow Keys on your keyboard to navigate</font></b></p></center>
+
+<center><p></p></center>
+<center style="float: right; padding-right: 20%;"><p>Right - 
+Home</p></center>
+<center style="float: left; padding-left: 20%;"><p>Left - 
+Start Game</p></center>
+<center><img src = "arrowkeys.png" style="width: 10%; height: 10%"></center>
+<center style="padding-bottom: .0001%;"><p></p></center>
+<center></center>
+    </body>
+</html>
